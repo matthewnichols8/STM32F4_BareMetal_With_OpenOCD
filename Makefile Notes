@@ -1,0 +1,12 @@
+Gcc tool command: arm-none-eabi-gcc
+Machine is Arm-Cortex-m4
+-c specifies to compile, but not link
+-mcpu specifies the micro processor
+-mthumb specifies to use thumb instruction, NOT Arm instruction
+-std specifies to use std library gnu11 which is ISO C standard C11 with extra GNU extensions
+
+Target = $@
+Dependency = $^
+Syntax:
+target:output
+  $(*Command) $(*Flags) -o *Target *Dependency
