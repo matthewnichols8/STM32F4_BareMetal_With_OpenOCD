@@ -28,5 +28,5 @@ SECTIONS
         _sbss = .;
         *(.bss)
         _ebss = .;
-    }
-}> SRAM
+    }> SRAM
+}
