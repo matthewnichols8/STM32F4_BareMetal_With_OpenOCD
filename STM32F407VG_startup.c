@@ -212,7 +212,7 @@ void Default_Handler() {
 
 void Reset_handler() {
     //Copies .data section to the SRAM
-    uint32_t size = &_edata - &_sdata;
+    uint32_t size = (uint32_t)&_edata - (uint32_t)&_sdata;
     uint8_t* pDst = (uint8_t*)&_sdata;
     uint8_t* pSrc = (uint8_t*)&_etext;
     for (uint32_t i = 0; i < size; i++) {
