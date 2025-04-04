@@ -12,6 +12,8 @@ extern uint32_t _edata;
 extern uint32_t _ebss;
 extern uint32_t _sbss;
 
+int main(void);
+
 void Reset_Handler(void);
 void NMI_Handler                    (void) __attribute__((weak, alias ("Default_Handler")));
 void HardFault_Handler              (void) __attribute__((weak, alias ("Default_Handler")));
