@@ -225,6 +225,9 @@ void Reset_handler() {
     for (uint32_t i = 0; i < size; i++) {
         *pDst++ = 0;
     }
+
+    __libc_init_array();
+    
     //Calls main()
     main();
 }
