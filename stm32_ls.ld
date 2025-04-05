@@ -12,15 +12,21 @@ SECTIONS
     {
         *(.isr_vector)
         *(.text)
+        *(.text.*)
+        *(.init)
+        *(.fini)
         *(.rodata)
+        *(.rodata.*)
         . = ALIGN(4);
         _etext = .;
     }> FLASH 
 
+    _la_data = LOADADDR(.data);
     .data :
     {
         _sdata = .;
         *(.data)
+         *(.data.*)
         . = ALIGN(4);
         _edata = .;
     }> SRAM AT > FLASH
@@ -30,6 +36,7 @@ SECTIONS
         _sbss = .;
         __bss_start__ = _sbss;
         *(.bss)
+        *(.bss.*)
         *(COMMON)
         . = ALIGN(4);
         _ebss = .;
