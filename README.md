@@ -1,6 +1,6 @@
 # STM32F4 Bare Metal with OpenOCD
 
-This repository contains the necessary files to program an STM32F4 microcontroller board using OpenOCD. The setup includes a startup file, a Makefile, and a linker script, all tailored to facilitate the development and flashing process on your STM32F4 board.
+This repository contains the necessary files to program an STM32F4 microcontroller board using OpenOCD. The setup includes a custom startup file, a Makefile, and a linker script, all tailored to facilitate the development and flashing process on the STM32F407VG Discovery Board
 
 ## Contents
 
