@@ -16,7 +16,7 @@ Before you begin, ensure that you have the following installed on your system:
 - [OpenOCD](http://openocd.org/)
 - [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html) (Optional, for peripheral initialization)
 
-Additionally, you'll need an STM32F4 development board and an appropriate JTAG/SWD debugger (e.g., ST-Link).
+Additionally, you'll need an STM32F4 development board and an appropriate JTAG/SWD debugger (e.g., ST-Link). I used ST-Link for this project.
 
 ## Getting Started
 
